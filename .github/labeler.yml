@@ -1,1 +1,4 @@
-
+# Add the label 'documentation' if any .md file (like README) is changed
+documentation:
+  - changed-files:
+    - any-glob-to-any-file: '*.md'
