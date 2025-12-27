@@ -20,3 +20,8 @@ jobs:
         run: |
           echo "Generating report..."
           date > report.txt
+      - name: Upload CI Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: ci-documentation
+          path: report.txt
